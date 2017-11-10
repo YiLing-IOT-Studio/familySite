@@ -1,0 +1,12 @@
+@charset "utf-8";
+body {padding-top: 2rem;}
+.navbar-inverse .navbar-nav .nav-link{color:rgba(255,69,0,0.8);}
+.dropdown-menu{background-color:#4F4F4F;color:rgb(255,69,0);}
+.dropdown-header{color:rgba(255,255,255,0.9);}
+.dropdown-item{color:rgba(255,255,255,0.6)}
+.dropdown-item:hover{background-color:#363636;color:rgba(255,69,0,0.6)}
+nav{background-color:#363636;}
+
+#slide1{background-color: #363636}
+#slide2{background-color: #CD5B45}
+#slide3{background-color: #363636}
