@@ -13,7 +13,12 @@ nav{background-color:#363636;}
 #slide3{background-color: #363636}
 #slide4{background-color: #363636}
 #slide5{background-color: #363636}
+
+/*main*/
+.Img{width:100%;height:300px; background-image: url("../../img/1-2-1.jpg");background-size: cover;}
+
+
 .swiper-slide{color:white;padding-top:24px;}
-.swiper-container{height: 3000px;}
+/*.swiper-container{height: 3000px;}*/
 .swiper-pagination{position:fixed;top:95%;}
 .swiper-pagination-bullet{line-height: 20px;background-color:rgba(255,69,0,0.6); }
