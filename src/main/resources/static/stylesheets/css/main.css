@@ -17,11 +17,11 @@ nav{background-color:#363636;}
 /*main*/
 .Img{width:100%;height:300px; background-size: cover;}
 
-.Img-first{background-image: url("../../img/1-2-1.jpg");}
+.Img-first{background-image: url("../../img/1-2-3.jpg");}
 .Img-second{background-image: url("../../img/2.jpg");}
 .Img-third{background-image: url("../../img/3.jpg");}
 .Img-fourth{background-image: url("../../img/4.jpeg");}
-.Img-fifth{background-image: url("../../img/5.jpg");}
+.Img-fifth{background-image: url("../../img/5-2.jpg");}
 
 .swiper-slide{color:white;padding-top:24px;}
 /*.swiper-container{height: 3000px;}*/
