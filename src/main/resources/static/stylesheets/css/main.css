@@ -24,6 +24,147 @@ nav{background-color:#363636;}
 .Img-fifth{background-image: url("../../img/5-2.jpg");}
 
 .swiper-slide{color:white;padding-top:24px;}
-.swiper-container{height: 3000px;}
+.swiper-container{height: 1200px;}
 .swiper-pagination{position:fixed;top:95%;}
 .swiper-pagination-bullet{line-height: 20px;background-color:rgba(255,69,0,0.6); }
+
+
+
+/*第一屏*/
+.timezone{
+    width:3px;
+    height:1000px;
+    margin:100px auto;
+    background: #999999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position:relative;
+    animation:heightSlide 5s linear;
+}
+@-webkit-keyframes heightSlide {
+    0%{
+        height:0;
+    }
+    100%{
+        height:1000px;
+    }
+}
+
+.timezone:after{
+    content:'未完待续...';
+    /*width:100px;*/
+    white-space: nowrap;
+    color:white;
+    position:absolute;
+    bottom:-30px;
+    animation: showIn 7s ease;
+    margin-left: -28px;
+}
+
+.timezone .left,.timezone .right{
+    position: absolute;
+    margin-left: -13px;
+    background: rgba(255,69,0,1);
+    width:20px;
+    height:20px;
+    border:4px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    animation: showIn ease;
+}
+/*.timezone .right{*/
+/*margin-top: 100px;*/
+/*}*/
+
+/* 对每个时间节点控制*/
+.timezone .left:nth-child(1){
+    animation-duration: 1.5s;
+    margin-top: -10px;
+}
+
+.timezone .right:nth-child(2){
+    animation-duration: 2.5s;
+    margin-top: 100px;
+}
+.timezone .left:nth-child(3){
+    animation-duration: 3.5s;
+    margin-top: 210px;
+}
+@-webkit-keyframes showIn{
+    0%,50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.timezone .left h2, .timezone .right h2{
+    position: absolute;
+    color: #f0ad4e;
+    width:100px;
+    font-size: 1em;
+    margin-top: -1px;
+    animation:showIn 3s ease;
+
+}
+.timezone .left h2:nth-child(1){
+    margin-left: -110px;
+}
+.timezone .right h2:nth-child(1){
+    margin-left:45px;
+}
+.timezone .left p,.timezone .right p{
+    position: absolute;
+    width:400px;
+    height: 50px;
+    background: rgba(255,255,255,0.1);
+    margin-top: -10px;
+    border:1px solid #eee;
+    border-radius: 3px;
+}
+.timezone .left .content{
+    margin-left: 130px;
+    animation: moveLeft 2s ease;
+}
+.timezone .right .content{
+    margin-left: -513px;
+    animation: moveRight 2s ease;
+}
+.timezone .left .content:after,.timezone .right .content:after{
+    position: absolute;
+    height:3px;
+    width:70px;
+    content: '';
+    top:20px;
+    background: mediumpurple;
+}
+.timezone .left .content:after{
+
+    left: -70px;
+}
+.timezone .right .content:after{
+
+    right: -70px;
+}
+@-webkit-keyframes moveLeft {
+    0%{
+        margin-left: 400px;
+    }
+    100%{
+        margin-left: 130px;
+    }
+}
+@-webkit-keyframes moveRight{
+    0%{
+        margin-left: -790px;
+    }
+    100%{
+        margin-left: -513px;
+    }
+}
+.timezone .left:hover,.timezone .right:hover{
+    border:4px solid rgba(255,69,0,0.4);
+    background: lemonchiffon;
+    box-shadow: 0 0 2px 2px rgba(255,255,255,0.4);
+}
