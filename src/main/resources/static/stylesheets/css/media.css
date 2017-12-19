@@ -48,6 +48,11 @@
         font-size: 12px;
     }
 
+    /*other about us*/
+    .Ot-content{
+        text-align: center;
+    }
+
 }
 @media screen and (max-width: 500px) {
     .VivaTimeline .pos-left .events {

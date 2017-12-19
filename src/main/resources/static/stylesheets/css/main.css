@@ -221,6 +221,28 @@ body {padding:0;padding-top: 2rem;margin: 0;}
     background-image: url(../../img/back.jpg);
     background-size: cover;
 }
+.Ot-content{
+    width: 90%;
+    margin: auto;
+    padding-top: 150px;
+    color: white;
+    text-align: right;
+    animation: showIn 1s ease;
 
-
+}
+.Ot-content h2{
+    font-family: 微软雅黑;
+    font-size: 2em;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: rgba(255,255,255,0.7);
+}
+.Ot-content p{
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.6);
+}
+@keyframes showIn {
+    0%{padding-top:0px;opacity: 0}
+    100%{}
+}
 
