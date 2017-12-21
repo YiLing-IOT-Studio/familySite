@@ -53,6 +53,7 @@
         text-align: center;
     }
 
+
 }
 @media screen and (max-width: 500px) {
     .VivaTimeline .pos-left .events {
@@ -67,4 +68,12 @@
     }
 
 
+}
+
+@media screen and (max-width: 1018px) and (min-width: 755px){
+
+    .gravitation .gra-row-col img{
+        max-width: 65%;
+        max-height: 90px;
+    }
 }

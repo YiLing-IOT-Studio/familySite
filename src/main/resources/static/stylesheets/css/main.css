@@ -259,6 +259,58 @@ body {padding:0;padding-top: 2rem;margin: 0;}
     100%{}
 }
 
+/*引力*/
+.gravitation{text-align: center;
+    background-color:rgba(245,245,245,0.6);
+    width: 100%;
+    padding: 60px 70px 40px;
+}
+.gravitation .gra-h3{
+    padding-bottom: 15px;
+}
+.gravitation .gra-span{
+    display: block;
+    width: 50px;
+    margin: 0 auto 40px;
+    height: 3px;
+    background: rgba(79,193,233,0.9);
+}
+.gra-row-col{padding: 50px 20px;
+    border: 1px solid rgba(79,193,233,0.2);
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: margin-top 0.5s ,box-shadow 0.5s;
+
+}
+.gra-row-col:hover{
+    border: 1px solid rgba(79,193,233,1);
+    margin-top:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.gravitation .gra-row-col img{
+    height: 105px;
+}
+.gravitation .gra-row-col h4{
+    margin: 30px auto 20px;
+    color: rgba(79,193,233,0.8);
+}
+
+.show{
+    animation:roate 2s;
+    animation-fill-mode:forwards;
+    animation-direction:alternate;
+}
+
+@keyframes roate{
+    from {
+        width:100px;
+        height:100px; }
+    to{
+        width:200px;
+        height:200px;
+    }}
 /*成员*/
 .members{
 

@@ -1,9 +1,4 @@
-$(document).ready(function () {
-    $('.VivaTimeline').vivaTimeline({
-        carousel: true,
-        carouselTime: 3000
-    });
-});
+
 
 
  (function ($, window, document, undefined) {
@@ -172,7 +167,8 @@ $(document).ready(function () {
 
 
 //宇宙特效
-$(document).ready(function () {
+(function () {
+
     "use strict";
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext('2d'),
@@ -275,8 +271,49 @@ $(document).ready(function () {
     }
 
     animation();
-});
+})();
+
 
 
 //滚动隐藏
 $("nav.fixed-top").autoHidingNavbar();
+
+ (function () {
+     //滚动控制动画
+     /*var a,b,c;
+      a=$("#dh").offset().top;//元素相对于窗口的距离
+      b=$(window).scrollTop(); //监控窗口已滚动的距离;
+      c=$(document).height();//整个文档的高度
+      d=$(window).height();//浏览器窗口的高度
+      element  标签
+      cssname  动画
+      offset  相对于窗口的距离 */
+
+     function scrollnumber(element,cssname,offset){
+         var a,b,c,d;
+         d=$(element).offset().top;
+         a=eval(d + offset);
+         b=$(window).scrollTop();
+         c=$(window).height();
+         if(b+c>a){
+             $((element)).addClass((cssname));
+         }
+     }
+
+     function scrollfun(){
+         scrollnumber(".container",'show',50);
+     }
+
+ })();
+
+
+ $(document).ready(function () {
+     $('.VivaTimeline').vivaTimeline({
+         carousel: true,
+         carouselTime: 3000
+     });
+     scrollfun();
+     $(window).scroll(function(){
+         scrollfun();
+     });
+ });
