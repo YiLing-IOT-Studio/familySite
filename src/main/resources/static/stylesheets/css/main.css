@@ -215,19 +215,6 @@ body {padding:0;padding-top: 2rem;margin: 0;}
 
 
 /*第二页*/
-.fixed-back{
-    height: 600px;
-    width: 100%;
-    position: fixed;
-    /*background-image: url(../../img/1-2-2.jpg);*/
-    background-size: cover;
-}
-.all{
-    position: absolute;
-    top:0;
-    width: 100%;
-}
-
 .Ot-top{
     height: 400px;
     margin-top: 21px;
@@ -261,14 +248,14 @@ body {padding:0;padding-top: 2rem;margin: 0;}
 
 /*引力*/
 .gravitation{text-align: center;
-    background-color:rgba(245,245,245,0.6);
+    background-color:rgba(245,245,245,1);
     width: 100%;
     padding: 60px 70px 40px;
 }
-.gravitation .gra-h3{
+ .gra-h3{
     padding-bottom: 15px;
 }
-.gravitation .gra-span{
+ .gra-span{
     display: block;
     width: 50px;
     margin: 0 auto 40px;
@@ -297,22 +284,19 @@ body {padding:0;padding-top: 2rem;margin: 0;}
     color: rgba(79,193,233,0.8);
 }
 
-.show{
-    animation:roate 2s;
-    animation-fill-mode:forwards;
-    animation-direction:alternate;
-}
 
-@keyframes roate{
-    from {
-        width:100px;
-        height:100px; }
-    to{
-        width:200px;
-        height:200px;
-    }}
 /*成员*/
 .members{
-
+    text-align: center;
+    padding-top: 60px;
+    /*background:rgba(64,74,89,0.8);*/
 }
-
+#e-content{
+    height: 500px;
+}
+.mem-main{background: #404a59;}
+.leftText-e p{
+    margin-top: 27%;
+    color:#C1FFC1;
+    padding: 0 20%;
+}
